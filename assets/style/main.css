@@ -7,10 +7,10 @@
 }
 
 body {
-    background-color: #cddcdf70;
+    background-color: #000;
 }
 .main {
-    background-color: aqua;
+    background-color: #0000;
     max-width: 80%;
     margin: auto;
 }
@@ -22,13 +22,16 @@ body {
     row-gap: 5px;
 }
 .main .grid-items .grid-item {
-    background-color: blue;
-    border: 2px solid red;
+    background-color: rgb(255, 230, 0);
+    border: 2px solid rgb(248, 245, 245);
+    border-radius: 5px 5px;
+    box-shadow:  20px 20px 60px #cddcdf70;
     row-gap: 10px;
+    height: 250px;
 }
 
-
-@media (min-width: 420px) and (max-width: 500px)  {
+/* media query */
+@media (min-width: 230px) and (max-width: 480px)  {
     .grid-items {
         display: grid;
         grid-template-columns: auto;
@@ -38,7 +41,7 @@ body {
     }
 }
 
-@media (min-width: 550px) and (max-width: 700px) {
+@media (min-width: 481px) and (max-width: 786px) {
     .grid-items {
         display: grid;
         grid-template-columns: auto auto;
@@ -47,10 +50,19 @@ body {
         row-gap: 5px;
     }
 }
-@media (min-width: 720px) and (max-width: 950px) {
+@media (min-width: 786px) and (max-width: 1024px) {
     .grid-items {
         display: grid;
         grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        padding: 10px;
+        row-gap: 5px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .grid-items {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
         column-gap: 10px;
         padding: 10px;
         row-gap: 5px;
