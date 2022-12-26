@@ -23,8 +23,8 @@ body {
 }
 .main .grid-items .grid-item {
     background-color: rgb(255, 230, 0);
-    border: 2px solid rgb(248, 245, 245);
-    border-radius: 5px 5px;
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 9px 9px;
     box-shadow:  20px 20px 60px #cddcdf70;
     row-gap: 10px;
     height: 250px;
